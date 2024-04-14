@@ -47,7 +47,8 @@ export default function Main(){
             <div className="pokemon_list">
                 {pokemonData.map((pokemon, index)=>(
                     <div key={index} className="pokemon">
-                        <p>{pokemon.name}</p>    
+                        <img src={pokemon.sprites.front_default} alt=""/>
+                        <h3>{pokemon.name}</h3>    
                     </div>
                 ))}
             </div>

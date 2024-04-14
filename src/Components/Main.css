@@ -26,6 +26,35 @@
     border: 1px solid black;
 }
 
+.pokemon_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pokemon{
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pokemon img{
+    width: 130px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.pokemon h3{
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+
 @media (max-width: 800px) {
     .searchbar input {
         width: 300px;

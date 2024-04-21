@@ -1,4 +1,4 @@
-.main_container{
+.main_container {
     width: 100%;
     height: auto;
     display: flex;
@@ -6,19 +6,19 @@
     align-items: center;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     height: 50px;
     background-color: lightgoldenrodyellow;
 }
 
-.navbar h2{
+.navbar h2 {
     font-size: 30px;
     margin-left: 12px;
     margin-top: 5px;
 }
 
-.searchbar input{
+.searchbar input {
     margin-top: 30px;
     width: 600px;
     padding: 20px;
@@ -26,14 +26,14 @@
     border: 1px solid black;
 }
 
-.pokemon_list{
+.pokemon_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 30px;
 }
 
-.pokemon{
+.pokemon {
     width: 150px;
     height: 200px;
     margin: 10px;
@@ -44,16 +44,74 @@
     cursor: pointer;
 }
 
-.pokemon img{
+.pokemon img {
     width: 130px;
     height: 130px;
     margin-bottom: 10px;
 }
 
-.pokemon h3{
+.pokemon h3 {
     text-transform: capitalize;
     margin-top: 30px;
 }
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 600px;
+    border-radius: 30px;
+    z-index: 999;
+}
+
+.popup_content {
+    display: flex;
+    align-items: center;
+    background-color: wheat;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.poke_details {
+    flex: 1; 
+    text-align: left;
+}
+
+.poke_details p {
+    margin-top: 10px;
+}
+
+.poke_details h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.poke_image {
+    flex: 1; 
+    text-align: center;
+}
+
+.poke_image img {
+    width: 60%; 
+}
+
+.close {
+    position: absolute;
+    top: 7px;
+    right: 17px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: red;
+}
+
+
 
 @media (max-width: 800px) {
     .searchbar input {
